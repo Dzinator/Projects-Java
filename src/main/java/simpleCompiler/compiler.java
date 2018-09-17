@@ -261,13 +261,13 @@ class Codegen {
        else {
 		   switch ((int) operator) {
 		   case((int) '=') :   codegen('=', (Exptree)t.left()); 
-							   codegen((char)t.root(), (Exptree)t.right()); 
+							   //codegen((char)t.root(), (Exptree)t.right()); 
 							   break;
 		   
 		   case((int) '+') :	tempstore++;
 								out.println("STORE "+ tempstore);
 								codegen('=', (Exptree)t.left()); 
-								codegen((char)t.root(), (Exptree)t.right());
+								//codegen((char)t.root(), (Exptree)t.right());
 								out.println("ADD "+ tempstore);
 								tempstore--;
 								break;
@@ -275,7 +275,7 @@ class Codegen {
 		   case((int) '*') :	tempstore++;
 								out.println("STORE "+ tempstore);
 								codegen('=', (Exptree)t.left()); 
-								codegen((char)t.root(), (Exptree)t.right());
+								//codegen((char)t.root(), (Exptree)t.right());
 								out.println("MUL "+ tempstore);
 								tempstore--;
 								break;
