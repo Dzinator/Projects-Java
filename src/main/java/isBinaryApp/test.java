@@ -1,3 +1,5 @@
+package isBinaryApp;
+
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
@@ -45,8 +47,8 @@ public class test {
 				{
 					public void actionPerformed(ActionEvent event)
 					{
-						if(isBinary(text.getText())) result.setText("Binary indeed!");
-						else result.setText("Not Binary!");
+						//TODO //if(isBinary(text.getText())) result.setText("Binary indeed!");
+						//else result.setText("Not Binary!");
 					}
 				});
 		
